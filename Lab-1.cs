@@ -26,6 +26,20 @@ namespace Sort
             Console.Write(myArr[i] + " ");
             }
             #endregion
+		    
+	     #region Shellsort
+            Console.WriteLine("\n\nArray before sort");
+
+            for (int i = 0; i < 50; i++)
+            {
+                myArr[i] = rand.Next(100);
+                Console.Write(myArr[i] + " ");
+            }
+
+            shellSort(myArr);
+            Console.WriteLine("\n\nArray after shellsort");
+            for (int i = 0; i < 50; i++) { Console.Write(myArr[i] + " "); }
+            #endregion	    
 		}
 	}
 }
